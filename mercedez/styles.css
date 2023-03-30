@@ -1,0 +1,827 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'corporate';
+    src: url(./fonts/Corporate\ A\ Light.ttf);
+}
+@font-face {
+    font-family: 'Daimlercs';
+    src: url(./fonts/daimler-cs-regular-woff.woff.ttf);
+}
+@font-face {
+    font-family: 'corpo';
+    src: url(./fonts/CorpA_Cyr_Regular_.ttf);
+}
+:root{
+    --background-bg: black;
+    --font-corporate: 'corporate';
+    --font-white: white;
+    --font-daimler: 'Daimlercs';
+    --fade-white: #bbbbbb;
+    --font-black: black;
+}
+.font-corpo{
+    font-family: 'corpo';
+}
+.font-black{
+    color: var(--font-black);
+}
+.container{
+    max-width: 1500px; 
+    margin: 0 auto;
+}
+.nav-bg{
+    background-color: var(--background-bg);
+}
+.navbar{
+   justify-content: center;
+   align-items: center;
+}
+.navbar > div > img{
+    height: 64px;
+    width: 64px;
+    margin: 16px 0 16px 110px;
+}
+.lh-45{
+    line-height: 45px;
+}
+.lh-40{
+    line-height: 40px;
+}
+.lh-23{
+    line-height: 23px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pb-18{
+    padding-bottom: 18px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.pb-10{
+    padding-bottom: 10px;
+}
+.pl-15{
+    padding-left: 15px;
+}
+.m-72{
+    margin: 72px 0;
+}
+.mt-5{
+    margin-top: 5px;
+}
+.mb-25{
+    margin-bottom: 25px;
+}
+.mb-72{
+    margin-bottom: 72px;
+}
+.mt-50{
+    margin-top: 50px;
+}
+.mt-60{
+    margin-top: 60px;
+}
+.mt-18{
+    margin-top: 18px;
+}
+.mt-10{
+    margin-top: 10px;
+}
+.mt-110{
+    margin-top: 110px;
+}
+.ml-40{
+    margin-left: 40px;
+}
+.ml-100{
+    margin-left: 100px;
+}
+.ml-11{
+    margin-left: 11px;
+}
+.ml-60{
+    margin-left: 60px;
+}
+.ml-30{
+    margin-left: 30px;
+}
+.ml-120{
+    margin-left: 100px;
+}
+.ml-70{
+    margin-left: 70px;
+}
+.ml-160{
+    margin-left: 160px;
+}
+.m-100{
+    margin: 0 100px;
+}
+.ml-48{
+    margin-left: 48px;
+}
+.position-relative{
+    position: relative
+}
+.position-absolute{
+    position: absolute;
+}
+.font-17{
+    font-size: 17px;
+}
+.justify-content-space-between{
+    justify-content: space-between;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.f-corporate{
+    font-family: var(--font-corporate);
+}
+.font-white{
+    color: var(--font-white);
+}
+.d-flex{
+    display: flex;
+}
+.font-daimler{
+    font-family: var(--font-daimler);
+}
+.fade-white{
+    color: var(--fade-white);
+}
+.font-12{
+    font-size: 12px;
+}
+.font-34{
+    font-size: 34px;
+}
+.font-26{
+    font-size: 26px;
+}
+.search-box{
+    padding: 16px 60px 16px 16px;
+    background-color: #262626;
+    height: 48px;
+    width: 260px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+   font-size: 14px;
+   margin-left: 20px;
+    position: relative;  
+}
+.align-items-center{
+    align-items: center;
+}
+.mr-12{
+    margin-right: 12px;
+}
+.mr-50{
+    margin-right: 130px;
+}
+.mr-5{
+    margin-right: 5px;
+}
+.fa-magnifying-glass{
+    position: absolute;
+    top: 29px;
+    margin-left: -50px;
+    z-index: 1;
+}
+.m-110{
+    margin-right: 110px;
+}
+.search-box-border{
+    border-left: solid #333333 1px;
+    padding: 10px 10px 10px 18px;
+    z-index: 1;
+}
+.navbar-bottom-border{
+    border-bottom: solid #333333 1px;
+}
+.p-16{
+    padding: 16px 16px 16px 16px;
+}
+.p-10{
+    padding: 10px 0;
+}
+.menu{
+    color: var(--fade-white);
+    font-family: 'Daimlercs';
+    font-size: 18px;
+    margin-left: 120px;
+}
+.explore-mercedes{
+    font-size: 21px;
+    text-align: center;
+    color: var(--font-white);
+    font-family: 'Daimlercs';
+    padding: 8px 0;
+    border-bottom: solid white 1px;
+    border-top: solid white 1px;
+}
+.explore-mercedes > p > span{
+    text-decoration: underline;
+}
+.banner{
+    min-width: 100%;
+    width: 1500px;
+    object-fit: cover;
+    box-shadow: 100px 100px 10px red inset;
+}
+.banner-caption{
+    box-shadow: inset 200px -150px 200px black;
+    position: absolute;
+    top: 0;
+    min-width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.banner-caption > div > div > :nth-child(1){
+    margin-top: 200px;
+    margin-left: 110px;
+    color: var(--font-white);
+    font-weight: 500;
+    font-size: 64px;
+    font-family: 'corporate';
+}
+.banner-caption > div > div > :nth-child(2){
+    color: #bbbbbb;
+    font-size: 18px;
+    font-family: 'Daimlercs';
+    margin-left: 110px;
+    margin-top: 40px;
+    font-weight: 500;
+}
+.banner-button-1{
+        margin-left: 110px;
+        margin-top: 80px;
+        font-family: 'Daimlercs';
+        font-weight: bold;
+        width: 150px;
+        color: var(--font-white);
+        background-color: transparent;
+        border: #696969 solid 1px;
+        height: 50px;
+        align-items: center;
+        font-size: 16px;
+        border-radius: 2px;
+        transition: 1s;
+}
+.banner-button-1:hover{
+    background-color: rgba(255, 255, 255, 0.226);
+}
+.banner-button-2{
+    margin-left: 5px;
+    margin-top: 80px;
+    font-family: 'Daimlercs';
+    font-weight: bold;
+    width: 150px;
+    color: var(--font-white);
+    background-color: #0078d6;
+    border: #696969 solid 1px;
+    height: 50px;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 2px;
+    transition: 1s;
+}
+.banner-button-2:hover{
+    background-color: #014880;
+}
+.Our-recommendations{
+    font-family: 'corpo';
+    font-size: 48px;
+    padding: 88px 85px;
+}
+.Our-recommendations-menus{
+    width: 300px;
+}
+.Our-recommendations-menus > div{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.Our-recommendations-menus > div > img{
+    height: 219px;
+    width: 292px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+.btn1{
+    background-color: #0078d6;
+    width: 228px;
+    color: var(--font-white);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 11px 23px;
+    border: none;
+    height: 48px;
+    justify-content: center;
+    transition: 0.5s;
+}
+.btn1:hover{
+    background-color: #014880;
+}
+.btn2{
+    background-color: var(--font-white);
+    width: 228px;
+    color: var(--font-black);
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 11px 23px;
+    border: none;
+    height: 48px;
+   border: #bbbbbb solid 1px;
+}
+.btn2:hover{
+    background-color: #ebebeb;
+}
+.p-25{
+    padding: 25px;
+}
+.recommendations-menus-content > p{
+    font-family: 'Daimlercs';
+    font-weight: bolder;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.recommendations-menus-content > span{
+    font-family: 'Daimlercs';
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.slider-dots{
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 5px;
+}
+.slider-dots > :nth-child(1){
+    font-size: 8px;
+}
+.slider-dots > :nth-child(2){
+    font-size: 8px;
+    color: #999999;
+}
+.slider-dots > :nth-child(3){
+    font-size: 8px;
+    color: #999999;
+}
+.slider-dots > :nth-child(4){
+    font-size: 5px;
+    color: #999999;
+}
+.slider-dots > :nth-child(5){
+    font-size: 3px;
+    color: #ccc;
+}
+.Our-vehicles{
+    font-family: 'corpo';
+    font-size: 48px;
+    padding: 88px 85px;
+    margin-top: 50px;
+}
+.all-models{
+    background-color: #262626;
+    font-family: var(--font-daimler);
+    color: var(--font-white);
+    width: 128px;
+    height: 20px;
+    padding: 18px 0;
+    text-align: center;
+    align-items: center;
+    margin-left: 70px;
+}
+.mercedes-eq{
+    width: 182px;
+    height: 54px;
+    padding: 0 0;
+    text-align: center;
+    border: #bbb solid 1px;
+}
+.mercedes-eq:hover{
+    background-color: rgba(204, 204, 204, 0.624);
+}
+.amg{
+    width: 138px;
+    height: 54px;
+    padding: 0 0;
+    text-align: center;
+    border: #bbb solid 1px;    
+}
+.amg:hover{
+    background-color: rgba(204, 204, 204, 0.624);
+}
+.maybach{
+    width: 144px;
+    height: 54px;
+    padding: 0 0;
+    text-align: center;
+    border: #bbb solid 1px;    
+}
+.maybach:hover{
+    background-color: rgba(204, 204, 204, 0.624);
+}
+.new-models{
+     font-size: 15px;
+     font-style: italic;
+     color: black;  
+     font-family: 'Daimlercs';
+     font-weight: 900;
+     border: #bbb solid 1px;  
+     height: 35px;
+     width: 154px;
+     text-align: center;
+     padding-top: 19px;
+     letter-spacing: 1px;
+}
+.new-models:hover{
+    background-color: rgba(204, 204, 204, 0.624);
+}
+.new-models > p > i{
+    color: #008dfc;
+    font-size: 10px;
+}
+.sticky{
+    position: sticky;
+    top: 40px;
+    z-index: 1;
+}
+.fuel-type-sticky{
+    position: sticky;
+    top: 65px;
+    z-index: 1;
+}
+.car-types{
+    font-family: 'Daimlercs';
+    font-weight: bold;
+    margin-left: 69px;
+    padding: 20px 0 20px 0;
+    font-size: 20px;
+}
+.car-menu{
+    border-right: 1px #e8e8e8 solid;
+    margin-top: 20px;
+    width: 367px;
+    margin-right: 40px;
+}
+.font-bold{
+    font-weight: bolder;
+}
+.font-20{
+    font-size: 20px;
+}
+.font-18{
+    font-size: 18px;
+}
+.limousine, .suv-range, .hatch-back{
+    color: #656363;
+}
+.limousine:hover, .suv-range:hover, .hatch-back:hover{
+    color: #0078d6;
+}
+.car-types-bottom-line{
+    border-bottom: rgba(204, 204, 204, 0.624) 2px solid;
+    width: 85px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.our-models-drp-down{
+    background-color: white;
+    z-index: 1;
+    padding: 0 86px;
+    width: 300px;
+    border-radius: 5px;
+    height: 700px;
+    overflow: scroll;
+    display: none;
+}
+.our-models-drp-down-container:hover .our-models-drp-down{
+    display: inline;
+}
+.our-models-drp-down-container:hover > div{
+    color: white;
+    border-top: #0078d6 solid 2px;
+}
+.finance-drp-down{
+    background-color: white;
+    z-index: 1;
+    padding: 0 86px;
+    width: 300px;
+    border-radius: 5px;
+    height: 700px;
+    overflow: scroll;
+    display: none;
+}
+.finance-drp-down-container:hover .finance-drp-down{
+    display: inline;
+}
+.finance-drp-down-container:hover > div{
+    color: white;
+    border-top: #0078d6 solid 2px;
+}
+.services-drp-down{
+    background-color: white;
+    z-index: 1;
+    padding: 0 0 0 43px;
+    width: 400px;
+    border-radius: 5px;
+    height: 600px;
+    display: none;
+}
+.services-drp-down-container:hover .services-drp-down{
+    display: inline;
+}
+.services-drp-down-container:hover > div{
+    color: white;
+    border-top: #0078d6 solid 2px;
+}
+.our-brand-drp-down{
+    background-color: white;
+    z-index: 1;
+    padding: 0 0 0 43px;
+    width: 400px;
+    border-radius: 5px;
+    height: 700px;
+    overflow-y: scroll;
+    display: none;
+}
+.our-brand-drp-down-container:hover .our-brand-drp-down{
+    display: inline;
+}
+.our-brand-drp-down-container:hover > div{
+    border-top: #0078d6 solid 2px;
+    color: white;
+}
+.drp-dwn-sticky{
+    position: sticky;
+    top: 0;
+    padding-top: 40px;
+    background-color: white;
+}
+.drp-down-link:hover{
+    color: black;
+}
+.dd-link{
+    text-decoration: none;
+    color: black;
+}
+.dd-link:hover{
+    font-weight: bold;
+}
+.buy-online-drp-down{
+    background-color: white;
+    z-index: 1;
+    padding: 0 86px;
+    width: 300px;
+    border-radius: 5px;
+    height: 700px;
+    display: none;
+}
+.buy-online-drp-down-container:hover .buy-online-drp-down{
+    display: inline-block;
+}
+.buy-online-drp-down-container:hover > div{
+    border-top: #0078d6 solid 2px;
+    color: white;
+}
+.limousine-sticky{
+    position: sticky;
+    z-index: 1;
+    top: 50px;
+}
+.limousine-menu{
+    font-size: 20px;
+    color: #767676;
+    font-weight: 400;
+    border-bottom: 1px rgba(204, 204, 204, 0.624) solid;
+    padding-bottom: 15px;
+    width: 1000px;
+    z-index: 2;
+    padding-top: 35px;
+    background-color: rgba(255, 255, 255, 0.897);
+}
+.suv-range-sticky{
+    position: sticky;
+    top: 60px;
+    z-index: 1;
+}
+.eqs-car-detail{
+    width: 288px;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.eqs-car-detail > :nth-child(2){
+    font-size: 16px;
+    color: #9f9f9f;
+    font-family: 'Daimlercs';
+}
+.new-btn{
+   background-color: #0078d6;
+   color: white;
+   border: none;
+   border-radius: 20px;
+   padding: 6px 14px;
+   font-size: 13px;
+   font-family: 'Daimlercs';
+   font-weight: 600;
+   margin-top: 15px; 
+}
+.electric-btn{
+    background-color: #e8e8e8;
+    color: #5c5c5c;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-family: 'Daimlercs';
+    font-weight: 600;
+    margin-top: 15px;
+}
+.eqs-car-img{
+    width: 260px;
+    padding-bottom: 18px;
+}
+.mt-40{
+    margin-top: 40px;
+}
+.eqs-car-menu{
+    height: 336px;
+    width: 300px;
+}
+.eqs-car-menu:hover{
+    background-color: #f8f8f8;
+    height: 330px;
+}
+.car-drop-dwn-1{
+    font-family: var(--font-daimler); 
+    background-color: white;
+   height: 173px;
+   width: 285px;
+   margin-left: 8px;
+   font-weight: 18px;
+   display: none;
+   z-index: 1;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.car-drop-dwn-1-container:hover .car-drop-dwn-1{
+    display: block;
+    z-index: 2;
+}
+.car-drop-dwn-2{
+    font-family: var(--font-daimler); 
+    background-color: white;
+   height: 130px;
+   width: 285px;
+   margin-left: 8px;
+   font-weight: 15px;
+   display: none;
+   z-index: 1;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.car-drop-dwn-2-container:hover .car-drop-dwn-2{
+    display: block;
+    z-index: 3;
+}
+.car-drop-dwn-3{
+    font-family: var(--font-daimler); 
+    background-color: white;
+   height: 210px;
+   width: 285px;
+   margin-left: 8px;
+   font-weight: 15px;
+   display: none;
+   z-index: 1;
+   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15);
+}
+.car-drop-dwn-3-container:hover .car-drop-dwn-3{
+    display: block;
+    z-index: 3;
+}
+.car-menu-border-bottom{
+    border-bottom: rgba(128, 128, 128, 0.741) 1px solid;
+}
+.car-menu-sticky{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+.car-2{
+    position: absolute;
+}
+.configure-car{
+    color: #767676;
+}
+.deep-drop-downs{
+    background-color: white;
+    z-index: 2;
+    width: 300px;
+    border-radius: 5px;
+    height: 600px;
+    width: 360px;
+    margin-left: 402px;
+    top: 0px;
+    color: black;
+    display: none;
+    line-height: 40px;
+}
+.deep-drop-downs-container:hover .deep-drop-downs{
+    display: block;
+}
+.deep-drop-downs-container:hover > p{
+    font-weight: bold;
+}
+.deep-drop-downs > :nth-child(1){
+    padding: 30px 30px;
+}
+.deep-drop-downs > :nth-child(2){
+    padding: 0 30px;
+}
+.legal-disclaimer{
+    font-family: Arial;
+    font-size: 18px ;
+    margin: 100px 100px 0 100px;
+}
+.legal-disclaimer :nth-child(1){
+    padding-bottom: 20px;
+    border-bottom: solid #7f7f7fde 1px;
+}
+.legal-disclaimer-content{
+    font-size: 13px;
+    margin-top: 32px;
+    color: #767676ec;
+    line-height: 25px;
+    text-align: justify;
+}
+.online-store-content, .configurator-content, .nearest-showroom-content, .fin-insurance-content{
+    font-size: 16px;
+    margin-top: 8px;
+    font-weight: normal;
+    color: #767676;
+}
+.configurator, .online-store, .nearest-showroom, .fin-insurance{
+    width: 262px;
+    border: #bbbbbb 1px solid;
+    height: 75px;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #333;
+    padding: 24px 16px;
+    font-weight: bolder;
+}
+.configurator:hover, .online-store:hover, .nearest-showroom:hover, .fin-insurance:hover{
+    background-color: #f4f4f4bc;
+}
+.footer{
+    padding: 0 100px;
+}
+.footer-menu-width{
+    width: 184px;
+}
+.footer-menu-links{
+    text-decoration: none;
+    color: var(--fade-white);
+}
+.footer-menu-links:hover{
+    border-bottom: 1px solid white;
+    color: white;
+}
+.scrolling-up{
+    height: 144px;
+    color: var(--font-white);
+    font-size: 16px;
+    text-align: center;
+}
+.footer-options{
+    margin: 0 25px 50px 0;
+
+}
+.footer-about-options{
+    border-top: solid 1px grey;
+    padding: 25px 0 50px 0;
+    width: 1300px;
+}
+.chat-btn{
+    position: absolute;
+    right: 0;
+    bottom: 80px;
+    z-index: 4;
+    position: fixed;
+    background-color: #1b1a1a;
+    border-radius: 12px;
+    right: 23px;
+    padding: 10px;
+}
+#top{
+    text-decoration: none;
+    color: var(--font-white);
+}
